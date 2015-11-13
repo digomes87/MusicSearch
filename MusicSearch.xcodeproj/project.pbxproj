@@ -13,6 +13,11 @@
 		868D3C111B8E41D300CB8DE9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868D3C101B8E41D300CB8DE9 /* Images.xcassets */; };
 		868D3C141B8E41D300CB8DE9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 868D3C121B8E41D300CB8DE9 /* LaunchScreen.xib */; };
 		868D3C201B8E41D300CB8DE9 /* MusicSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D3C1F1B8E41D300CB8DE9 /* MusicSearchTests.swift */; };
+		868D3C2A1B8E41FD00CB8DE9 /* ItunesConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D3C291B8E41FD00CB8DE9 /* ItunesConnection.swift */; };
+		868D3C2C1B8E442400CB8DE9 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D3C2B1B8E442400CB8DE9 /* Album.swift */; };
+		868D3C2F1B8E474C00CB8DE9 /* MusicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 868D3C2E1B8E474C00CB8DE9 /* MusicView.xib */; };
+		868D3C311B8E477300CB8DE9 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D3C301B8E477300CB8DE9 /* MusicView.swift */; };
+		F524DF0F1B9C58AE00B7118A /* MusicSearch in Resources */ = {isa = PBXBuildFile; fileRef = F524DF0E1B9C58AE00B7118A /* MusicSearch */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		868D3C191B8E41D300CB8DE9 /* MusicSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		868D3C1E1B8E41D300CB8DE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		868D3C1F1B8E41D300CB8DE9 /* MusicSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSearchTests.swift; sourceTree = "<group>"; };
+		868D3C291B8E41FD00CB8DE9 /* ItunesConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItunesConnection.swift; sourceTree = "<group>"; };
+		868D3C2B1B8E442400CB8DE9 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		868D3C2E1B8E474C00CB8DE9 /* MusicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicView.xib; sourceTree = "<group>"; };
+		868D3C301B8E477300CB8DE9 /* MusicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
+		F524DF0E1B9C58AE00B7118A /* MusicSearch */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MusicSearch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,7 @@
 		868D3BFB1B8E41D300CB8DE9 = {
 			isa = PBXGroup;
 			children = (
+				F524DF0E1B9C58AE00B7118A /* MusicSearch */,
 				868D3C061B8E41D300CB8DE9 /* MusicSearch */,
 				868D3C1C1B8E41D300CB8DE9 /* MusicSearchTests */,
 				868D3C051B8E41D300CB8DE9 /* Products */,
@@ -78,7 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				868D3C091B8E41D300CB8DE9 /* AppDelegate.swift */,
-				868D3C0B1B8E41D300CB8DE9 /* ViewController.swift */,
+				868D3C291B8E41FD00CB8DE9 /* ItunesConnection.swift */,
+				868D3C2D1B8E442B00CB8DE9 /* Model */,
+				868E22A41B8E478E00F8B30E /* View */,
+				868E22A51B8E4E7E00F8B30E /* Controller */,
 				868D3C0D1B8E41D300CB8DE9 /* Main.storyboard */,
 				868D3C101B8E41D300CB8DE9 /* Images.xcassets */,
 				868D3C121B8E41D300CB8DE9 /* LaunchScreen.xib */,
@@ -110,6 +124,31 @@
 				868D3C1E1B8E41D300CB8DE9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		868D3C2D1B8E442B00CB8DE9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				868D3C2B1B8E442400CB8DE9 /* Album.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		868E22A41B8E478E00F8B30E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				868D3C2E1B8E474C00CB8DE9 /* MusicView.xib */,
+				868D3C301B8E477300CB8DE9 /* MusicView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		868E22A51B8E4E7E00F8B30E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				868D3C0B1B8E41D300CB8DE9 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +231,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F524DF0F1B9C58AE00B7118A /* MusicSearch in Resources */,
 				868D3C0F1B8E41D300CB8DE9 /* Main.storyboard in Resources */,
 				868D3C141B8E41D300CB8DE9 /* LaunchScreen.xib in Resources */,
+				868D3C2F1B8E474C00CB8DE9 /* MusicView.xib in Resources */,
 				868D3C111B8E41D300CB8DE9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +255,9 @@
 			files = (
 				868D3C0C1B8E41D300CB8DE9 /* ViewController.swift in Sources */,
 				868D3C0A1B8E41D300CB8DE9 /* AppDelegate.swift in Sources */,
+				868D3C311B8E477300CB8DE9 /* MusicView.swift in Sources */,
+				868D3C2A1B8E41FD00CB8DE9 /* ItunesConnection.swift in Sources */,
+				868D3C2C1B8E442400CB8DE9 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +453,7 @@
 				868D3C251B8E41D300CB8DE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		868D3C261B8E41D300CB8DE9 /* Build configuration list for PBXNativeTarget "MusicSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +462,7 @@
 				868D3C281B8E41D300CB8DE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
